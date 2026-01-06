@@ -42,29 +42,29 @@
 name: curvenote init
 version: 1
 questions:
-  - id: title
-    field: project.title
-    enabled: true
-    type: text
-    message: 'Project title:'
-    placeholder: e.g., My Research Project
-    required: false
-  - id: subtitle
-    field: project.subtitle
-    enabled: true
-    type: text
-    message: 'Subtitle:'
-    placeholder: A concise, single line description
-    hint: Keep it short - this appears as a tagline
-    required: false
-  - id: description
-    field: project.description
-    enabled: true
-    type: text
-    message: 'Description:'
-    placeholder: A longer description suitable for social media and listings
-    hint: Used for social media and article listings
-    required: false
+  # - id: title
+  #   field: project.title
+  #   enabled: true
+  #   type: text
+  #   message: 'Project title:'
+  #   placeholder: e.g., My Research Project
+  #   required: false
+  # - id: subtitle
+  #   field: project.subtitle
+  #   enabled: true
+  #   type: text
+  #   message: 'Subtitle:'
+  #   placeholder: A concise, single line description
+  #   hint: Keep it short - this appears as a tagline
+  #   required: false
+  # - id: description
+  #   field: project.description
+  #   enabled: true
+  #   type: text
+  #   message: 'Description:'
+  #   placeholder: A longer description suitable for social media and listings
+  #   hint: Used for social media and article listings
+  #   required: false
   - id: authors
     field: project.authors
     enabled: true
@@ -73,11 +73,11 @@ questions:
     placeholder: ORCID, GitHub username, or comma-separated list
     hint: You can add multiple authors separated by commas
     required: false
-  - id: keywords
-    field: project.keywords
-    enabled: true
-    type: list
-    message: 'Keywords:'
-    placeholder: e.g., science, research, data analysis
-    hint: Help others discover your project
-    required: false
+  # - id: keywords
+  #   field: project.keywords
+  #   enabled: true
+  #   type: list
+  #   message: 'Keywords:'
+  #   placeholder: e.g., science, research, data analysis
+  #   hint: Help others discover your project
+  #   required: false
