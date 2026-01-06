@@ -1,6 +1,4 @@
 ---
-# Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
 abstract: |
   The abstract should briefly describe what this DevNote is about in a few sentences. If it's describing an experiment, it should answer the questions what did you do? what did you find? You can safely assume that the reader is well versed in the PURE system and synthetic cells. An example: "We implemented an energy module based on the bifunctional PPK2 enzyme that converts polyphosphate (PolyP) into ATP. We found that it increases the performance of Base Cytosol by 25% when the concentration of magnesium is optomized".
 ---
