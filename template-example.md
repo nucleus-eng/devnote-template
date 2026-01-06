@@ -42,7 +42,7 @@ Methenyltetrahydrofolate synthetase (MTHFS, [EC 6.3.3.2](https://ecocyc.org/acco
 
 To test this hypothesis, we supplemented commercial human MTHFS (the only commercially available source) into PURE reactions with energy mix containing folinic acid dissolved in water. The addition of MTHFS resulted in a dramatic improvement in PURE system performance as shown in {ref}`fig-kinetics` and {ref}`fig-endpoint`, confirming that folinic acid processing is required. 
 
-:::{table} Description of experimental paramters
+:::{table} Description of experimental parameters
 :label: table-experimental-params
 :align: center
 
