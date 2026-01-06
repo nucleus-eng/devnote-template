@@ -1,6 +1,6 @@
 ---
 abstract: |
-  The abstract should briefly describe what this DevNote is about in a few sentences. If it's describing an experiment, it should answer the questions what did you do? what did you find? You can safely assume that the reader is well versed in the PURE system and synthetic cells. An example: "We implemented an energy module based on the bifunctional PPK2 enzyme that converts polyphosphate (PolyP) into ATP. We found that it increases the performance of Base Cytosol by 25% when the concentration of magnesium is optomized".
+  The abstract should briefly describe what this DevNote is about in a few sentences. If it's describing an experiment, it should answer the questions what did you do? what did you find? You can safely assume that the reader is well versed in the PURE system and synthetic cells. An example: "We implemented an energy module based on the bifunctional PPK2 enzyme that converts polyphosphate (PolyP) into ATP. We found that it increases the performance of Base Cytosol by 25% when the concentration of magnesium is optimized".
 ---
 
 # Overview
@@ -34,7 +34,7 @@ Also, feel free to make use of bullet points, they provide a quick way of commun
 
 ## My first result
 
-The centerpiece of most results sections are going to be figures and tables. Figures can be created by 1) referencing a path to a figure in your project or 2) by referencing the output of a jupyter notebook cell directly. If the figure is the output of a jupyter notebook cell, we recommend referncing the cell directory.
+The centerpiece of most results sections are going to be figures and tables. Figures can be created by 1) referencing a path to a figure in your project or 2) by referencing the output of a jupyter notebook cell directly. If the figure is the output of a jupyter notebook cell, we recommend referencing the cell directory.
 
 In order to make sure the particular jupyter notebook is known to the project, the specific file must be referenced in the file `curvenote.yml`:
 
@@ -49,7 +49,7 @@ The main thing to keep in mind is that the first file should be `main.md`. If th
 
 Now that your jupyter notebook has been linked to the project by including a reference to it in the `curvenote.yml` file, let's take a look at a common scenario for presenting data from a fluorescent platereader experiment. We have decided to include a detailed [table](table-experimental-params) describing the experimental parameters {ref}`table-experimental-params`. Notice the two different ways to create a reference to this same table, they both make use of the `label` option within the table. These patterns also work for figures.
 
-Following the table, we've made use of a feautre called tabsets that allow us to present two different figures side by side. Think of it as a way to create panels without having to open up Illustrator or Powerpoint. The basic syntax pattern goes like this:
+Following the table, we've made use of a feature called tabsets that allow us to present two different figures side by side. Think of it as a way to create panels without having to open up Illustrator or Powerpoint. The basic syntax pattern goes like this:
 
 ```
 :::::{tab-set}
@@ -73,7 +73,7 @@ My caption.
 Now, notice in the two figures included in the tab set how the first figure with label "Time series" references a figure using `#fig:kinetcs`. This is referring to a specific jupyter notebook cell that has been so labelled. If you open the file `experiments/experiment-01/20250220-analysis.ipynb` you can see that some of the cells have something like `#| label: fig:kinetics` in their very first line. This allows them to be referenced in this document by appending a `#` to the label. Meanwhile, the second figure with label "End point" is created by referencing a similar output that was saved as a `.png` file, specifically `/experiments/experiment-01/MTHFS_endpoint.png`. Note that other items like tables can also be included in tab sets. 
 
 
-:::{table} Description of experimental paramters
+:::{table} Description of experimental parameters
 :label: table-experimental-params
 :align: center
 
