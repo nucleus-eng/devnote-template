@@ -1,12 +1,12 @@
 # README
 
-[Developer Notes](https://devnotes.bnext.bio/) (DevNotes) are a concise form of scientific communication designed to rapidly share insights and results of interest to the Nucleus and broader synthetic cell communities. Since they are built on top of Jupyter Notebooks, DevNotes can easily integrate code and a variety of file types, bundling an entire research workflow into a discrete package.
+[Developer Notes](https://devnotes.nucleus.engineering/) (DevNotes) are a concise form of scientific communication designed to rapidly share insights and results of interest to the Nucleus and broader synthetic cell communities. Since they are built on top of Jupyter Notebooks, DevNotes can easily integrate code and a variety of file types, bundling an entire research workflow into a discrete package.
 
-If you are new to DevNotes, begin by reading the documentation for getting started with [Nucleus Hub](https://nucleus.bnext.bio/Nucleus-Hub-22dae616eb51802f9e99f51193a30a15) and writing your first [DevNote](https://nucleus.bnext.bio/Developer-Notes-22dae616eb5180bc9e76dc87f9af0e0e). DevNotes are the primary vehicle through which Covered Source for Nucleus will be distributed, pursuant to the Notice below. Results and insights that are highly useful and/or relevant to the Nucleus community will be integrated into the [Nucleus Distribution](https://nucleus.bnext.bio/) by the Core Development Team at b.next.
+If you are new to DevNotes, begin by reading the documentation for getting started with [Nucleus Hub](https://docs.nucleus.engineering/guides/nucleus-hub/nucleus-hub/) and writing your first [DevNote](https://docs.nucleus.engineering/guides/developer-notes/developer-notes/). DevNotes are the primary vehicle through which Covered Source for Nucleus will be distributed, pursuant to the Notice below. Results and insights that are highly useful and/or relevant to the Nucleus community will be integrated into the [Nucleus Distribution](https://docs.nucleus.engineering/) by the Core Development Team at b.next.
 
 ## Getting started
 
-This template is intended to be accessed from [Nucleus Hub](https://bnext.bio/hub).
+This template is intended to be accessed from [Nucleus Hub](https://nucleus.engineering/hub/).
 
 ## How to use this template
 
@@ -22,7 +22,7 @@ The typical workflow for creating a DevNote that includes experimental data will
 
 ## Website
 
-Visit the Nucleus Ecosystem at https://bnext.bio/nucleus.
+Visit the Nucleus Ecosystem at https://nucleus.engineering/.
 
 
 ## How to cite
