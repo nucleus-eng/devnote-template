@@ -1,0 +1,10 @@
+{
+  "name": "devnote-template",
+  "version": "0.0.0",
+  "description": "Minimal package file for build-time plugin dependencies only.",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "seqparse": "^0.2.2"
+  }
+}
