@@ -112,6 +112,24 @@ Translation kinetics of PURE system reactions under different folinic acid condi
 
 :::::
 
+## Interactive sequence viewer
+
+As a standard feature, this template ships with a `{seqviz}` directive (see `seqviz.mjs` and `seqviz-widget.mjs`, registered as a plugin in `base.yml`) for exploring plasmid maps and other DNA/RNA/protein sequences interactively, rather than as a static image. Point it at a `seqparse`-compatible file (GenBank, FASTA, SnapGene, JBEI, SBOL) and it will be parsed at build time and handed to a browser-side [SeqViz](https://github.com/Lattice-Automation/seqviz) widget via MyST's native `anywidget` node, so it renders in any standard MyST deployment (not just Curvenote-hosted sites). Files referenced this way should live in the `plasmids/` directory, which is already packaged as a resource in `base.yml`.
+
+```
+:::{seqviz} ./plasmids/pOpen-deGFP.gb
+:height: 600px
+:viewer: both
+:::
+```
+
+Which renders as:
+
+:::{seqviz} ./plasmids/pOpen-deGFP.gb
+:height: 600px
+:viewer: both
+:::
+
 ## My second result
 
 This section is left to you to fill in with your own data. As a final point, it's very simple to reference existing literature by DOI. For example, the original PURE [paper](https://doi.org/10.1038/90802) by Shimizu can be found here [](https://doi.org/10.1038/90802). Again notice the two different ways of referencing the paper and how they are reflected in the rendered output. The same syntax can be used for other [URLs](https://devnotes.bnext.bio/). However, these will generally not offer a [tooltip](https://en.wikipedia.org/wiki/Tooltip), unless it's from wikipedia 😉. Note that all links to DOI citations will be included at the end of the Developer Note in a Reference section where they will appear as formatted citations. 
