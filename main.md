@@ -130,6 +130,32 @@ Which renders as:
 :viewer: both
 :::
 
+## Interactive microscopy viewer
+
+As a standard feature, this template also supports embedding [Vizarr](https://github.com/hms-dbmi/vizarr) — a client-side viewer for large, multiscale OME-Zarr microscopy images — using MyST's native `{anywidget}` directive directly (no plugin needed, since Vizarr just points at a remote Zarr URL rather than a local file). Point it at any OME-Zarr `source` and it streams tiles on demand as you pan and zoom, without downloading the whole dataset. The example below points at a single well (`I12`) from a real Nucleus microscopy dataset.
+
+```
+:::{anywidget} https://curvenote.github.io/widgets/widgets/vizarr-viewer.js
+:class: w-full
+
+{
+    "source": "https://data.nucleus.engineering/microscopy/valine/20260821-biotic-liposomes_2026-08-21_12-21-54.333371.zarr/I/12/0",
+    "height": "600px"
+}
+:::
+```
+
+Which renders as:
+
+:::{anywidget} https://curvenote.github.io/widgets/widgets/vizarr-viewer.js
+:class: w-full
+
+{
+    "source": "https://data.nucleus.engineering/microscopy/valine/20260821-biotic-liposomes_2026-08-21_12-21-54.333371.zarr/I/12/0",
+    "height": "600px"
+}
+:::
+
 ## My second result
 
 This section is left to you to fill in with your own data. As a final point, it's very simple to reference existing literature by DOI. For example, the original PURE [paper](https://doi.org/10.1038/90802) by Shimizu can be found here [](https://doi.org/10.1038/90802). Again notice the two different ways of referencing the paper and how they are reflected in the rendered output. The same syntax can be used for other [URLs](https://devnotes.bnext.bio/). However, these will generally not offer a [tooltip](https://en.wikipedia.org/wiki/Tooltip), unless it's from wikipedia 😉. Note that all links to DOI citations will be included at the end of the Developer Note in a Reference section where they will appear as formatted citations. 
