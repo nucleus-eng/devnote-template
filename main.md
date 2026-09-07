@@ -130,7 +130,22 @@ Which renders as:
 :viewer: both
 :::
 
+The directive also accepts a URL, so you can reference a file hosted in another repository (e.g. a shared plasmid registry) instead of committing a copy into this project. Paste the normal GitHub "view file" link and it's automatically resolved to the raw content:
+
+```
+:::{seqviz} https://github.com/nucleus-eng/DNA/blob/main/reporters/pOpen-amajLime.gb
+:height: 600px
+:viewer: both
 ## Interactive microscopy viewer
+```
+
+
+Which renders as:
+
+:::{seqviz} https://github.com/nucleus-eng/DNA/blob/main/reporters/pOpen-amajLime.gb
+:height: 600px
+:viewer: both
+:::
 
 As a standard feature, this template also supports embedding [Vizarr](https://github.com/hms-dbmi/vizarr) — a client-side viewer for large, multiscale OME-Zarr microscopy images — using MyST's native `{anywidget}` directive directly (no plugin needed, since Vizarr just points at a remote Zarr URL rather than a local file). Point it at any OME-Zarr `source` and it streams tiles on demand as you pan and zoom, without downloading the whole dataset. The example below points at a single well (`I12`) from a real Nucleus microscopy dataset.
 
