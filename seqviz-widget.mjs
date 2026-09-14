@@ -1,12 +1,14 @@
-// These versions are pinned together deliberately: seqviz@3.10.24 resolves its
-// react/react-dom peer deps to 19.2.8 on esm.sh. Importing react/react-dom separately
-// at a different version here would load a second copy of React alongside the one
-// seqviz uses internally, which breaks at render time. If you bump the seqviz version,
-// re-check what react/react-dom version it resolves to (fetch the plain, un-pinned
-// `https://esm.sh/seqviz@<version>` and follow its internal react/react-dom imports)
-// and update these two imports to match.
-import React from 'https://esm.sh/react@19.2.8';
-import { createRoot } from 'https://esm.sh/react-dom@19.2.8/client';
+// Import react/react-dom using the *exact same specifier* seqviz@3.10.24 uses
+// internally for its peer deps (see its plain, un-pinned `https://esm.sh/seqviz@3.10.24`
+// output), rather than a hardcoded version. esm.sh resolves identical specifiers to the
+// same underlying module, so this stays in sync with whatever seqviz actually loads even
+// as esm.sh's "latest matching" react/react-dom build changes over time. A hardcoded
+// version (e.g. react@19.2.8) drifts out of sync with that floating resolution and loads
+// a second copy of React alongside the one seqviz uses, which breaks at render time
+// (this bit us once already). If you bump the seqviz version, re-derive this specifier
+// from its new peerDependencies range.
+import React from 'https://esm.sh/react@^16.8.6%20||%20^17.0.0%20||%20^18.0.0%20||%20^19.0.0?target=es2022';
+import { createRoot } from 'https://esm.sh/react-dom@^16.8.6%20||%20^17.0.0%20||%20^18.0.0%20||%20^19.0.0/client?target=es2022';
 import * as seqvizMod from 'https://esm.sh/seqviz@3.10.24';
 
 // seqviz has no named ESM export on esm.sh, so resolve `.SeqViz` at runtime.
