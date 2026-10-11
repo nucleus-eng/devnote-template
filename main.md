@@ -146,6 +146,22 @@ Which renders as:
 :viewer: both
 :::
 
+## Interactive plate map viewer
+
+As a standard feature, this template also ships with a `{platemap}` directive (see `platemap.mjs` and `platemap-widget.mjs`, registered as a plugin in `base.yml`) for exploring a 96- or 384-well plate map interactively, colored by well `Type`, instead of as a static table. Point it at a platemap CSV or TSV that follows the Nucleus schema (`Date`, `Experiment`, `Well`, `Name`, `Type` are the required columns — see `nucleus-skills`'s `build-platemap` skill for the full column and `Type` vocabulary) and it's parsed at build time, then handed to a browser-side widget via MyST's native `anywidget` node. Hovering a well shows its name, type, and the three composition columns that vary most by well. `:fields:` names a different set explicitly. `:wells: 384` renders a dense 16x24 grid with a pattern fill marking each `Type` instead of a text code. `:label:` makes the plate map cross-referenceable elsewhere in the document.
+
+```
+:::{platemap} ./experiments/experiment-01/nucleus-platemap-example.csv
+:height: 420px
+:::
+```
+
+Which renders as:
+
+:::{platemap} ./experiments/experiment-01/nucleus-platemap-example.csv
+:height: 420px
+:::
+
 ## Interactive microscopy viewer
 
 As a standard feature, this template also supports embedding [Vizarr](https://github.com/hms-dbmi/vizarr) — a client-side viewer for large, multiscale OME-Zarr microscopy images — using MyST's native `{anywidget}` directive directly (no plugin needed, since Vizarr just points at a remote Zarr URL rather than a local file). Point it at any OME-Zarr `source` and it streams tiles on demand as you pan and zoom, without downloading the whole dataset. The example below points at a single well (`I12`) from a real Nucleus microscopy dataset.

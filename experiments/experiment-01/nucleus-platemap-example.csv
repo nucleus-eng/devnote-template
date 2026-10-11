@@ -1,0 +1,7 @@
+Well,Date,Experiment,Name,Type,Rxn Volume (uL),DNA (nM),Mg-Glutamate (mM)
+A1,2026-01-10,MTHFS folinic acid titration,no DNA control,Negative Control,10,0,8
+A2,2026-01-10,MTHFS folinic acid titration,0 uM folinic acid,Sample,10,5,8
+A3,2026-01-10,MTHFS folinic acid titration,10 uM folinic acid,Sample,10,5,8
+A4,2026-01-10,MTHFS folinic acid titration,100 uM folinic acid,Sample,10,5,8
+B1,2026-01-10,MTHFS folinic acid titration,saturating standard,Standard,10,20,8
+B2,2026-01-10,MTHFS folinic acid titration,buffer only,Blank,10,0,0

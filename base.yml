@@ -16,6 +16,7 @@ project:
   plugins:
     - lorem.mjs
     - seqviz.mjs
+    - platemap.mjs
   jupyter: true
   exports:
     - format: meca
